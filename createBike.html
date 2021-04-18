@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create bike</title>
+    <script src="src/ctrl/initialize.js"></script>
+    <script src="src/model/Bike.js"></script>
+    <script src="src/view/createBike.js"></script>
+    <script>
+        window.addEventListener("load", bikeshed.view.createBike.setupUserInterface);
+    </script>
+</head>
+<body>
+    <h1>Bike shed. Create a new bike</h1>
+    <form id="Bike">
+        <p><label>ID: <input type="number" name="id" /></label></p>
+        <p><label>brand: <input type="text" name="brand" /></label></p>
+        <p><label>model: <input type="text" name="model" /></label></p>
+        <p><label>year: <input type="number" name="year" /></label></p>
+        <p><button type="button" name="commit">Create bike</button></p>
+    </form>
+    <a href="index.html">Back to front page</a>
+</body>
+</html>

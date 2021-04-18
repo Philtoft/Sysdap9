@@ -1,43 +1,39 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Minimal JS front-end App Example</title>
-    <script src="src/model/Book.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike shed</title>
+    <script src="src/ctrl/initialize.js"></script>
+    <script src="src/model/Bike.js"></script>
   </head>
   <body>
-    <h1>Public Library</h1>
-    <h2>An Example of a Minimal JavaScript front-end App</h2>
-    <p>This app supports the following operations:</p>
-    <menu>
+    <h1>Bike shed</h1>
+    <ul class="menu">
       <li>
-        <a href="listBooks.html"
-          ><button type="button">List all books</button></a
+        <a href="listBikes.html"
+          ><button type="button">List all bikes</button></a
         >
       </li>
       <li>
-        <a href="createBook.html"
-          ><button type="button">Add a new book</button></a
+        <a href="createBike.html"
+          ><button type="button">Add a new bike</button></a
         >
       </li>
       <li>
-        <a href="updateBook.html"
-          ><button type="button">Update a book</button></a
+        <a href="updateBike.html"
+          ><button type="button">Update a bike</button></a
         >
       </li>
       <li>
-        <a href="deleteBook.html"
-          ><button type="button">Delete a book</button></a
+        <a href="deleteBike.html"
+          ><button type="button">Delete a bike</button></a
         >
       </li>
       <li>
-        <button type="button" onclick="Book.clearData()">Clear database</button>
+        <button type="button" onclick="Bike.clearData()">Clear data</button>
       </li>
-      <li>
-        <button type="button" onclick="Book.createTestData()">
-          Create test data
-        </button>
-      </li>
-    </menu>
+    </ul>
   </body>
 </html>
